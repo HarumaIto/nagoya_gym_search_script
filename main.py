@@ -22,7 +22,7 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     options = webdriver.ChromeOptions()
-    # options.add_argument('--headless') 
+    options.add_argument('--headless') 
     
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     
